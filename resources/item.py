@@ -73,7 +73,6 @@ class Item(Resource):
             item.rating = data['rating']
             item.details = data['details']
             item.discount = data['discount']
-            '''item.store_id = data['store_id']'''
 
         else:
             item = ItemModel(name, **data)
