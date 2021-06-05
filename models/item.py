@@ -12,8 +12,6 @@ class ItemModel(db.Model):
 
     wishlist = db.relationship('WishListModel')
 
-    #wishlist_id = db.Column(db.Integer, db.ForeignKey('wishlists.id'))
-    #wishlist = db.relationship('WishListModel')
 
     def __init__(self, name,  item_id, category, rating, details, discount):
         self.name = name
